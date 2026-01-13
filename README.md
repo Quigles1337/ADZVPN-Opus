@@ -13,7 +13,7 @@ ADZVPN-Opus is a custom VPN built on the **Silver Ratio mathematical framework**
 - Custom VPN protocol with strong encryption
 - Silver ratio mathematics for unique anti-fingerprinting
 - AI-powered routing, threat detection, and privacy optimization
-- Optional COINjecture P2P integration
+
 
 ## Silver Ratio Foundation
 
