@@ -1,0 +1,40 @@
+# ADZVPN-Opus AI Services Dependencies
+# Silver-weighted AI for VPN routing, threat detection, and privacy
+
+# Core Framework
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+
+# Async HTTP
+httpx>=0.26.0
+aiohttp>=3.9.0
+
+# ML/AI Core
+numpy>=1.26.0
+scikit-learn>=1.4.0
+
+# Threat Detection
+# torch>=2.1.0  # Uncomment for GPU inference
+# transformers>=4.36.0  # For BERT domain classifier
+
+# Privacy AI
+# Lightweight - uses numpy for silver noise generation
+
+# Assistant (Ollama integration)
+ollama>=0.1.0
+
+# Monitoring & Logging
+prometheus-client>=0.19.0
+structlog>=24.1.0
+
+# Testing
+pytest>=7.4.0
+pytest-asyncio>=0.23.0
+pytest-cov>=4.1.0
+
+# Development
+black>=24.1.0
+ruff>=0.1.0
+mypy>=1.8.0
