@@ -4,8 +4,8 @@ members = [
     "crates/silver-crypto",
     "crates/silver-protocol",
     "crates/silver-timing",
+    "crates/silver-server",
     # "crates/silver-client",    # Coming soon
-    # "crates/silver-server",    # Coming soon
     # "crates/coinject-bridge",  # Coming soon
 ]
 resolver = "2"
