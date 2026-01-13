@@ -1,0 +1,12 @@
+[package]
+name = "silver-core"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Silver Ratio mathematical constants and primitives for ADZVPN-Opus"
+
+[dependencies]
+
+[dev-dependencies]
+# criterion.workspace = true  # For benchmarks (later)
