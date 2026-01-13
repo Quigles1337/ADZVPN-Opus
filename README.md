@@ -8,7 +8,7 @@ A collaboration between **ADZ** (Alexander David Zalewski) and **Claude Opus 4.5
 
 ## Overview
 
-ADZVPN-Opus is a custom VPN built on the **Silver Ratio mathematical framework** from the COINjecture P2P protocol. It combines:
+ADZVPN-Opus is a custom VPN built on the **Silver Ratio mathematical framework** It combines:
 
 - Custom VPN protocol with strong encryption
 - Silver ratio mathematics for unique anti-fingerprinting
