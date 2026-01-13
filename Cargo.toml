@@ -3,7 +3,7 @@ members = [
     "crates/silver-core",
     "crates/silver-crypto",
     "crates/silver-protocol",
-    # "crates/silver-timing",    # Coming soon
+    "crates/silver-timing",
     # "crates/silver-client",    # Coming soon
     # "crates/silver-server",    # Coming soon
     # "crates/coinject-bridge",  # Coming soon

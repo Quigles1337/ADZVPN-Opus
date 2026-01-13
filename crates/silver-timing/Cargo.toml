@@ -1,0 +1,22 @@
+[package]
+name = "silver-timing"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Silver timing system with τ-scheduler for anti-fingerprinting"
+
+[dependencies]
+silver-core = { path = "../silver-core" }
+
+# Async runtime
+tokio = { workspace = true, features = ["time", "sync"] }
+
+# Random for jitter
+rand.workspace = true
+
+# Error handling
+thiserror.workspace = true
+
+[dev-dependencies]
+tokio = { workspace = true, features = ["rt-multi-thread", "macros", "time"] }
