@@ -1,0 +1,33 @@
+[package]
+name = "silver-protocol"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Silver VPN protocol implementation for ADZVPN-Opus"
+
+[dependencies]
+silver-core = { path = "../silver-core" }
+silver-crypto = { path = "../silver-crypto" }
+
+# Async runtime
+tokio.workspace = true
+
+# Serialization
+serde.workspace = true
+bincode.workspace = true
+
+# Error handling
+thiserror.workspace = true
+
+# Encoding
+hex = "0.4"
+
+# Random
+rand.workspace = true
+
+# Bytes handling
+bytes = "1.5"
+
+[dev-dependencies]
+tokio = { workspace = true, features = ["rt-multi-thread", "macros"] }
