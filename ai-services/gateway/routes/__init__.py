@@ -1,5 +1,5 @@
 """Gateway routes."""
 
-from . import health, silver, router
+from . import health, silver, router, threat, privacy, assistant
 
-__all__ = ["health", "silver", "router"]
+__all__ = ["health", "silver", "router", "threat", "privacy", "assistant"]

@@ -98,11 +98,14 @@ def create_app() -> FastAPI:
     )
 
     # Include routers
-    from .routes import health, silver, router as silver_router
+    from .routes import health, silver, router as silver_router, threat, privacy, assistant
 
     app.include_router(health.router, prefix=settings.api_prefix, tags=["Health"])
     app.include_router(silver.router, prefix=settings.api_prefix, tags=["Silver Math"])
     app.include_router(silver_router.router, prefix=settings.api_prefix, tags=["Silver Router"])
+    app.include_router(threat.router, prefix=settings.api_prefix, tags=["Threat Detection"])
+    app.include_router(privacy.router, prefix=settings.api_prefix, tags=["Privacy AI"])
+    app.include_router(assistant.router, prefix=settings.api_prefix, tags=["Chat Assistant"])
 
     # Exception handler
     @app.exception_handler(Exception)
