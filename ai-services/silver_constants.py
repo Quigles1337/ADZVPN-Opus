@@ -154,8 +154,12 @@ def silver_delay_us(packet_index: int, base_interval_us: int) -> int:
     Calculate silver-timed delay for packet timing.
 
     Uses Pell sequence for anti-fingerprinting.
+    Caps at index 10 to keep delays reasonable (pell(10) = 2378).
     """
-    pell_val = pell(packet_index % 20)
+    # Cap at index 10 to prevent exponential growth
+    # pell(10) = 2378, gives reasonable 2-3x multiplier
+    capped_index = packet_index % 10
+    pell_val = pell(capped_index)
     delay = base_interval_us * (1.0 + pell_val / DELTA_S)
     return int(delay)
 
