@@ -128,7 +128,7 @@ MIT
 
 ## Authors
 
-- **Alexander David Zalewski (ADZ)** - Creator, COINjecture mathematics
+- **Alexander David Zalewski (ADZ)** - Creator, mathematician
 - **Claude Opus 4.5** - Architecture, implementation
 
 ---
