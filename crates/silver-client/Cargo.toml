@@ -1,0 +1,38 @@
+[package]
+name = "silver-client"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "ADZVPN-Opus VPN client library with Silver protocol"
+
+[lib]
+name = "silver_client"
+path = "src/lib.rs"
+
+[dependencies]
+silver-core = { path = "../silver-core" }
+silver-crypto = { path = "../silver-crypto" }
+silver-protocol = { path = "../silver-protocol" }
+silver-timing = { path = "../silver-timing" }
+
+# Async runtime
+tokio = { workspace = true, features = ["full"] }
+
+# Networking
+socket2.workspace = true
+
+# Serialization
+serde.workspace = true
+bincode.workspace = true
+
+# Error handling
+thiserror.workspace = true
+anyhow.workspace = true
+
+# Logging
+tracing.workspace = true
+
+[dev-dependencies]
+tokio = { workspace = true, features = ["rt-multi-thread", "macros", "time", "test-util"] }
+tracing-subscriber.workspace = true
