@@ -1,7 +1,7 @@
 [workspace]
 members = [
     "crates/silver-core",
-    # "crates/silver-crypto",    # Coming soon
+    "crates/silver-crypto",
     # "crates/silver-timing",    # Coming soon
     # "crates/silver-protocol",  # Coming soon
     # "crates/silver-client",    # Coming soon
